@@ -12,7 +12,11 @@ class ProductListView(ListView):
 		context = super(ProductListView, self).get_context_data(*args, **kwargs)
 		print(context)
 		return context
-
+class ProductListView(ListView):
+	queryset = Product.objects.all()
+	template_name = "products/list.html"
+	
+	
 def product_list_view(request):
 	queryset = Product.objects.all()
 	context = {
@@ -32,7 +36,7 @@ class ProductDetailView(DetailView):
 def product_detail_view(request, pk=None, *args, **kwargs):
 	#print(args)
 	#print(kwargs)
-	instance = Product.objects.all(pk=pk)
+	#instance = Product.objects.all(Product,pk=pk)
 	instance = get_object_or_404(Product, pk=pk)
 	context = {
 		'object': instance

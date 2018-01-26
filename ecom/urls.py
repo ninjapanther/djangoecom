@@ -29,6 +29,8 @@ urlpatterns = [
 	url(r'^register/$',register_page),
 	url(r'^products/$',ProductListView.as_view()),
 	url(r'^products-fbv/$',product_list_view),
+	url(r'^products/(?P<pk>\d+)/$',ProductDetailView.as_view()),
+	url(r'^products-fbv/(?P<pk>\d+)/$',product_detail_view),
     url(r'^admin/', include(admin.site.urls)),
 	url(r'^path/to/blog/', include('wordpress.urls')),
 	url(r'^catalog/$', 'ecom.views.home'),
