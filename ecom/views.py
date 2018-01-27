@@ -2,6 +2,7 @@ from django.contrib.auth import authenticate, login, get_user_model
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.shortcuts import render_to_response
+from django.template import Context, Template, loader
 from .forms import ContactForm, LoginForm, RegisterForm
 def home(request):
 	return render_to_response(u'index.html')
