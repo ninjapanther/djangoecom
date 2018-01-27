@@ -7,42 +7,14 @@ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <meta name="keywords" content="{{ meta_keywords }}" />
 <meta name="description" content="{{ meta_description }}" />
 <link rel="Stylesheet" type="text/css" href="static/css/css.css" />
-<style>
-html,body{
-background-color:Silver;
-}
-.module div {
-padding: 5px;
-font-weight: bold;
-border-bottom: 1px solid #eee;
-line-height: 23px;
-}
-.module div a {
-font-weight: bold;
-}
-#header{
-clear:both;
-background-color:#98AC5E;
-color:White;
-text-align:center;
-}
-#footer{
-clear:both;
-background-color:#98AC5E;
-color:White;
-text-align:center;
-}
-</style>
+
 </head>
 <body>
 
 <div class="cb"></div>
-{% load static %}
-<img src="{% static "ecom/spark.jpg" %}" alt="My image"/>
-<img src="{% static "ecom/templates/spark.jpg" %}" alt="My image"/>
+
 {% load staticfiles %}
-<img src="{% static "ecom/templates/spark.jpg" %}" alt="My image"/>
-<img src="{% static "/static/templates/spark.jpg" %}" />
+<img src="{% static "templates/static/images/spark.jpg" %}" />
 <img src="spark.jpg" />
 {% block site_wrapper %}{% endblock %}
 </body></html>

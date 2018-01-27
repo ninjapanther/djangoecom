@@ -104,9 +104,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static-my-proj"),
+    os.path.join(BASE_DIR, "static-ecom"),
    
 )
 
+#STATIC_PATH = os.path.join(PROJECT_PATH,'static')
+#STATICFILES_DIRS = [
+  #  os.path.join(BASE_DIR, "static"),
+ #   '/var/www/static/',
+#]
+#STATIC_ROOT =  os.path.join(os.path.dirname(BASE_DIR), "static-my-cdn")
 
-STATIC_ROOT =  os.path.join(os.path.dirname(BASE_DIR), "static-my-cdn")
+STATIC_ROOT =  os.path.join(os.path.dirname(BASE_DIR), "static-ecom")
