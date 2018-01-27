@@ -11,6 +11,11 @@ line-height: 23px;
 .module div a {
 font-weight: bold;
 }
+#container {
+margin: 0 auto;
+width: 70%;
+text-align: left;
+}
 #header{
 clear:both;
 background-color:#98AC5E;
@@ -34,7 +39,9 @@ text-align:center;
 hello
 {{object_list}}
 {% for obj in object_list %}
-
+<img src="/static/spark.jpg" alt="Picture of carango" /> <!-- New line -->
+<img src="spark.jpg" alt="Picture of carango" /> <!-- New line -->
+<img src="/spark.jpg" alt="Picture of carango" />
 {{obj.title}}<br />
 {{obj.image}}
 {% endfor %}
