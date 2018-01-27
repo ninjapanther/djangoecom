@@ -11,6 +11,14 @@ xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 html,body{
 background-color:Silver;
 }
+.bn{
+border:none;
+}#main{
+margin: 0 auto;
+width:900px;
+background-color:White;
+}
+
 .module div {
 padding: 5px;
 font-weight: bold;
@@ -35,7 +43,12 @@ text-align:center;
 </style>
 </head>
 <body>
+<div id="header">
+<div class="footerIEPadder">
+{% include "navigation.html" %}
 
+</div>
+</div>
 <div class="cb"></div>
 {% load static %}
 <img src="{% static "ecom/spark.jpg" %}" alt="My image"/>
